@@ -1,0 +1,48 @@
+ESTADOS
+
+    Modificado (modified);
+    Preparado (staged/index)
+    Consolidado (comitted);
+
+CONFIGURAR
+
+git config --global user.name "Leonardo Comelli"
+git config --global user.email leonardo@software-ltda.com.br
+git config --global core.editor vim
+
+LISTAR CONFIGURAÇÕES
+
+git config --list
+
+CRIAR NOVO REPOSITÓRIO
+
+git init
+
+VERIFICAR ESTADO DOS ARQUIVOS/DIRETÓRIOS
+
+git status
+
+ADICIONAR UM ARQUIVO/DIRETÓRIO
+
+git add meu_arquivo_ou_diretorio
+
+COMITAR
+
+git commit meu_arquivo.txt meu_outro_arquivo.txt
+git commit -m "minha mensagem de commit"
+
+EXIBIR HISTÓRICO
+
+git log
+git log --graph
+git log --decorate
+
+git show <numero_do_hash_que_identifica_um_commit>
+
+Desfazendo alteração local (working directory) antes de dar "git add"
+
+git checkout -- meu_arquivo.txt
+
+
+
+
