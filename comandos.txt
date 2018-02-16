@@ -39,10 +39,20 @@ git log --decorate
 
 git show <numero_do_hash_que_identifica_um_commit>
 
-Desfazendo alteração local (working directory) antes de dar "git add"
+DESFAZENDO ALTERAÇÃO LOCAL
+NO WORKING DIRECTORY - DESFAZER ALTERAÇÃO NO ARQUIVO - USAR SE AINDA NAO FOI DADO "git add"
 
 git checkout -- meu_arquivo.txt
 
+NO STAGING AREA - VOLTA PRA ANTES DO "git add" - USAR QUANDO JÁ FOI DADO "git add" - SERIA UM "git DESadd"
 
+git reset HEAD meu_arquivo.txt
 
+VOLTA PRA DEPOIS DO "git add"
+git reset --soft <numero_do_hash_que_identifica_um_commit_anterior_ao_que _eu_quero_matar>
 
+VOLTA PRA ANTES DO "git add"
+git reset --mixed <numero_do_hash_que_identifica_um_commit_anterior_ao_que _eu_quero_matar>
+
+VOLTA E MATA TUDO. OS ARQUIVOS DEIXAM DE EXISTIR E NADA DESFAZ ISSO E PRA RE-SUBIR PRO REPOSITÓRIO AINDA FODE OS LOGS. NUNCA USAR!!!!
+git reset --hard <numero_do_hash_que_identifica_um_commit_anterior_ao_que _eu_quero_matar>
