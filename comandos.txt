@@ -56,3 +56,15 @@ git reset --mixed <numero_do_hash_que_identifica_um_commit_anterior_ao_que _eu_q
 
 VOLTA E MATA TUDO. OS ARQUIVOS DEIXAM DE EXISTIR E NADA DESFAZ ISSO E PRA RE-SUBIR PRO REPOSITÓRIO AINDA FODE OS LOGS. NUNCA USAR!!!!
 git reset --hard <numero_do_hash_que_identifica_um_commit_anterior_ao_que _eu_quero_matar>
+
+EXIBIR OS REPOSITÓRIOS REMOTOS
+
+git remote
+git remote -v
+
+VINCULAR REPOSITÓRIO LOCAL COM UM REPOSITÓRIO REMOTO
+
+git remote add origin git@github.com:<usuário>/<nome_do_repositório_lá_no_git>.git
+
+
+
